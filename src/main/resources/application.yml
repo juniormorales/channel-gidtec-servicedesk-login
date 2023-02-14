@@ -6,7 +6,7 @@ spring:
     name: support-gidtec-servicedesk-users
   data:
     mongodb:
-      uri: mongodb://localhost:27017/gidtec-servicedesk-db
+      uri: mongodb+srv://juniormoralesbrenis:sj7EX9iTxHWKiXob@cluster0.arspgug.mongodb.net/gidtec-servicedesk-db?retryWrites=true&w=majority
   main:
     allow-bean-definition-overriding: true
 
