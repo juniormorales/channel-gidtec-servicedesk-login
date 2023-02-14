@@ -1,0 +1,31 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+  application:
+    name: support-gidtec-servicedesk-users
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/gidtec-servicedesk-db
+  main:
+    allow-bean-definition-overriding: true
+
+application:
+  openapi:
+    info:
+      title: Service Desk Channel Login
+      description: Permite el inicio de sesión de usuarios
+      version: 1.0.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+
+audit-properties:
+  status-code:
+    IN: INACTIVO
+    AC: ACTIVO
+server:
+  port: 8081
